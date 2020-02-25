@@ -1,2 +1,0 @@
-# cv
-Eid Alkhaldi CV
