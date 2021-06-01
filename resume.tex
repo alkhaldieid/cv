@@ -1,0 +1,275 @@
+% Created 2021-05-23 Sun 01:20
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% Use roboto and lato for fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\usepackage{paracol}
+\columnratio{0.6} % Set the left/right column width ratio to 6:4.
+\usepackage[bottom]{footmisc}
+\addbibresource{aidan.bib}
+\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\author{Eid Alkhaldi}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Eid Alkhaldi},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.2 (Org mode 9.4.6)}, 
+ pdflang={English}}
+\begin{document}
+
+
+
+
+\name{Eid Alkhaldi}
+\photoR{2.8cm}{eid_portrait.jpg}
+\tagline{PhD Researcher}
+
+\personalinfo{%
+  \homepage{www.aidanscannell.com}
+  \email{scannell.aidan@gmail.com}
+  \phone{+44 787 558 3912}
+  \location{Bristol, UK}
+  \github{aidanscannell}
+  \linkedin{aidan-scannell-82522789/}
+}
+\makecvheader
+
+\begin{paracol}{2}
+\begin{quote}
+``I am an aspiring researcher with interests at the intersection of probabilistic machine learning and control theory. I am particularly interested in uncertainty quantification and as a result, a great deal of my work focuses on Bayesian non-parametric methods, specifically Gaussian processes and variational inference.''
+\end{quote}
+\cvsection{Experience}
+\label{sec:org39b9d0b}
+\cvevent{PhD Researcher}{ University of Bristol}{Sept 2018 -- Ongoing}{ Bristol, UK}
+
+Researching methods for data-efficient learning and control in multimodal dynamical systems. EPSRC Centre for Doctoral Training in Future Autonomous and Robotic Systems (FARSCOPE).
+
+\cvtag{Probabilistic modelling}
+\cvtag{Gaussian processes}
+\cvtag{Variational inference}
+\cvtag{Optimal control}
+\cvtag{Trajectory optimisation}
+
+\par\divider
+\cvevent{Teaching Assistant}{ University of Bristol}{Sept 2018 -- Ongoing}{ Bristol, UK}
+
+Alongside my PhD I have assisted teaching:
+\begin{itemize}
+\item \href{https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19\%2F20\&unitCode=COMS30007}{Machine Learning COMS30007}
+\item \href{https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19\%2F20\&unitCode=COMSM0012}{Robotic Systems COMSM0012}
+\item \href{https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?ayrCode=19/20\\\&unitCode=EMATM0042}{Intelligent Information Systems EMATM0042}
+\end{itemize}
+
+\cvtag{Communication}
+\cvtag{Active listening}
+\cvtag{Teaching}
+
+\cvsection{Projects}
+\label{sec:org7da063f}
+\cvevent{Exploration of Operatable Dynamics Modes in Multimodal Dynamical Systems}{ University of Bristol}{ May 2021 - Ongoing}{ Bristol, UK}
+
+\begin{itemize}
+\item Developing data-efficient techniques for exploration in multimodal dynamical systems.
+\item The goal of this project is to explore a single dynamics mode that is known to be operatable whilst avoiding other modes.
+\end{itemize}
+
+\cvtag{Bayesian optimisation}
+\cvtag{Gaussian processes}
+\cvtag{Optimal control}
+\divider
+
+\cvevent{Trajectory Optimisation in Learned Multimodal Dynamical Systems}{ University of Bristol}{ Sept 2019 - March 2021}{ Bristol, UK}
+
+\begin{itemize}
+\item Synergising Bayesian inference and Riemannian geometry to control multimodal dynamical systems.
+\item Finds trajectories that 1) remain in a desired dynamics mode, 2) avoid regions of the dynamics with high epistemic uncertainty.
+\item \href{https://www.aidanscannell.com/publication/trajectory-optimisation-in-learned-multimodal-dynamical-systems-via-latent-ode-collocation/paper.pdf}{\faBook published @ ICRA 2021}
+\item \href{https://github.com/aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems}{\faGithub aidanscannell/trajectory-optimisation-in-learned-multimodal-dynamical-systems}
+\end{itemize}
+
+\cvtag{JAX}
+\cvtag{Probabilistic geometries}
+\cvtag{Optimal control}
+\par\divider
+
+\cvevent{Identifiable Mixtures of Sparse Variational Gaussian Process Experts}{ University of Bristol}{ Sept 2018 - Ongoing}{ Bristol, UK}
+
+\begin{itemize}
+\item Improving identifiability and scalability in the Mixtures of Gaussian Process Experts model with GP-based gating networks.
+\item Variational inference based on sparse GP approximations.
+\item \href{https://github.com/aidanscannell/mogpe}{\faGithub aidanscannell/mogpe}
+\end{itemize}
+
+\cvtag{GPflow}
+\cvtag{TensorFlow}
+\cvtag{Gaussian processes}
+\cvtag{Variational inference}
+
+\cvsection{Volunteering}
+\label{sec:orga9abeef}
+\cvevent{Cohort Representative}{ FARSCOPE CDT}{ Sept 2018 - Ongoing}{ Bristol, UK}
+
+\begin{itemize}
+\item Represent myself and my CDT peers in management meetings.
+\item Communicate information between students and management.
+\end{itemize}
+
+\cvtag{Communication}
+\cvtag{Interpersonal Skills}
+
+\par\divider
+\cvevent{Club Leader}{ Code Club}{ Dec 2017 - April 2018}{ Junction 3 Library, Bristol , UK}
+
+\begin{itemize}
+\item Set up (and then ran) a \href{https://codeclub.org/en/}{Code Club} for children aged 9-13.
+\item Led the organisation, planning and teaching of weekly lessons.
+\item Planned lessons to engage children by making coding fun.
+\item Extremely rewarding and reinforced my love for teaching.
+\end{itemize}
+
+\cvtag{Leadership}
+\cvtag{Teaching}
+\cvtag{Communication}
+\cvtag{Active listening}
+
+\cvsection{Talks}
+\label{sec:org9cb68d6}
+\cvevent{Synergising Bayesian Inference and Probabilistic Geometries for Robotic Control}{ Cognitive Systems - Technical University of Denmark (DTU)}{ 18 March 2021}{ Zoom}
+
+\begin{itemize}
+\item Presented a method that synergises Bayesian inference and probabilistic geometries to control multimodal dynamical systems.
+\end{itemize}
+
+\cvtag{Communication}
+\cvtag{Probabilistic geometries}
+\cvtag{Gaussian processes}
+
+\cvsection{Publications}
+\label{sec:org17fc78b}
+\nocite{*}
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% \divider
+% \printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}},type=article]
+% \divider
+\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+\switchcolumn
+
+\cvsection{Skills}
+\label{sec:org76e6cc9}
+\cvtag{Python}
+\cvtag{TensorFlow}
+\cvtag{GPflow}
+\cvtag{JAX}
+\cvtag{NumPy}
+\cvtag{SciPy}
+\cvtag{Matplotlib}
+\cvtag{GPy}
+
+\divider
+
+\cvtag{Java}
+\cvtag{C++}
+\cvtag{MATLAB}
+\cvtag{ROS}
+
+\divider
+
+
+\cvtag{Git/GitHub}
+\cvtag{LaTeX}
+\cvtag{Org-mode}
+
+\cvsection{Education}
+\label{sec:orgfa5387c}
+\cvevent{PhD\ in Bayesian Machine Learning for Robotic Control}{ University of Bristol}{ Sept 2018 - Ongoing}{}
+
+\divider
+
+\cvevent{Gaussian Process and Uncertainty Quantification Summer School (GPSS)}{ University of Sheffield}{ Sept 2019 - Sept 2019}{}
+
+\divider
+
+\cvevent{Machine Learning Summer School Moscow (MLSS)}{ Skoltech}{ Aug 2019 - Sept 2019}{}
+
+\divider
+
+\cvevent{\footnote{Not official - awarded if Ph.D. is not completed.} MRes in Robotics \& Autonomous Systems}{University of Bristol | First Class Honours}{Sept 2017 -- Sept 2018}{}
+
+\begin{itemize}
+\item \faBook \href{https://www.aidanscannell.com/project/uncertain-agentspeak/}{Extending BDI Agents to Model and Reason with Uncertainty}
+\end{itemize}
+
+
+\divider
+
+\cvevent{MEng in Mechanical Engineering}{ University of Bristol | First Class Honours}{ Sept 2012 -- June 2016}{}
+
+\begin{itemize}
+\item Graduated in top 10\% of cohort
+\end{itemize}
+
+\newpage
+
+\cvsection{Achievements}
+\label{sec:org2f0f446}
+\cvachievement{\faTrophy}{ Full Sporting Colours}{ Awarded full colours for outstanding achievements in snowboarding. Multiple gold medals in British University Snowboard Championships.}{}
+
+\divider
+
+\cvachievement{\faCertificate}{ Starting To Teach}{ Establish myself as a confident, enthusiastic and effective teacher who is able to engage, encourage and develop students' learning.}{}
+
+\divider
+
+\cvachievement{\faTrophy}{Bristol Plus Award}{ For undertaking a wide range of tasks to further enhance student skills - only 700 out of 23,000 achieved this award per annum.}{}
+
+\divider
+
+\cvachievement{\faCertificate}{ Mary Jones Prize for Mathematics}{ For outstanding achievements in A Level mathematics @ Ripon Grammar School}{}
+
+\cvsection{Referees}
+\label{sec:org162df67}
+% \cvref{name}{email}{mailing address}
+\cvref{Prof.\ Arthur Richards}{University of Bristol}{arthur.richards@bristol.ac.uk}
+% {Address Line 1\\Address line 2}
+\divider
+\cvref{Dr.\ Carl Henrik Ek}{University of Cambridge}{che29@cam.ac.uk}
+% {Address Line 1\\Address line 2}
+\end{paracol}
+\end{document}
+\end{document}
