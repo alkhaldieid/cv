@@ -1,0 +1,15 @@
+#+TITLE: Teaching Statement
+#+OPTIONS: toc:nil
+
+As a teacher and mentor, my goal is to empower students to become independent learners and critical thinkers. I believe that education is a transformative experience, and I am passionate about helping students discover their full potential and achieve their goals.
+
+In my teaching, I aim to create a collaborative and inclusive learning environment that encourages active participation and discussion. I believe that this approach helps students to engage more deeply with the material and to develop their own perspectives on the subject. I also try to use a variety of teaching methods and resources, such as hands-on activities, real-world examples, and online resources, to make the material more accessible and engaging for students.
+
+As an instructor of artificial intelligence and its applications to science and engineering, I am committed to staying up-to-date with the latest research and developments in the field. I believe that this is essential for providing students with a current and relevant education that prepares them for their future careers. I also try to incorporate real-world examples and case studies into my classes to help students understand the practical implications of the concepts they are learning.
+
+In addition to traditional coursework, I am also committed to providing students with opportunities for experiential learning, such as research projects, internships, and industry collaborations. I believe that these experiences are invaluable for helping students to apply their knowledge in a practical setting and to develop skills that are highly sought after by employers.
+
+Overall, my teaching philosophy is centered on the belief that education has the power to change lives and that every student has the potential to succeed. I am excited about the opportunity to join the faculty at KAUST and to contribute to the education and development of the next generation of leaders in artificial intelligence and its applications to science and engineering.
+
+
+

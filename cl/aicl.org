@@ -1,0 +1,20 @@
+#+TITLE: Cover Letter
+#+OPTIONS: toc:nil
+
+\noindent
+Dear KAUST recruiting team,
+\indent
+
+I am writing to express my interest in the faculty positions in artificial intelligence and its applications to science and engineering at KAUST. As a highly qualified and dedicated researcher in the field of artificial intelligence, I believe that I would be an excellent fit for this role and would be excited to contribute to the growth and success of the Computer, Electrical and Mathematical Science and Engineering Division at KAUST.
+
+I am a PhD graduate with a strong background in artificial intelligence, machine learning, and data science. I have published numerous papers on these topics in leading journals and conferences, including “Ensemble Optimization for Invasive Ductal Carcinoma
+(IDC) Classification Using Differential Cartesian Genetic Programming,” in IEEE Access which is a Q1 journal, “Ensemble Optimization Using Clonal Selection Algorithm
+for Breast Cancer Histology Image Classification”, “Adaptive PSO-Based Ensemble Optimization for Histology Image Classification”, and “Genetically Optimized Heterogeneous Ensemble for Histological Image Classification”. 
+
+As a faculty member, I am committed to excellence in teaching and research. I don't have official experience in teaching, however I tutored and mentored undergraduate and graduate courses in artificial intelligence, machine learning, and data science, and have received positive feedback from my colleagues for my ability to effectively communicate technical concepts. I am also passionate about mentoring and advising students.
+
+I am confident that my research and teaching experience make me well-suited for a faculty position at KAUST. I am excited about the opportunity to contribute to the vibrant community at KAUST and believe that I would be an asset to the Computer, Electrical and Mathematical Science and Engineering Division at KAUST. Thank you for considering my application. I look forward to the opportunity to further discuss my qualifications with you.
+
+\noindent
+Sincerely, \\
+Eid Alkhaldi

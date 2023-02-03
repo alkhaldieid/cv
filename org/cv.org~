@@ -1,0 +1,18 @@
+#+LATEX_CLASS: cv
+#+LATEX_HEADER: \input{/home/alkhaldieid/repos/cv/org/cvheader.tex}
+#+LATEX_CLASS_OPTIONS: [letterpaper,10pt]
+
+
+* section one
+
+# Local Variables:
+# org-latex-default-packages-alist: nil
+# org-latex-packages-alist: nil
+# org-latex-with-hyperref: nil
+# org-latex-title-command: nil
+# org-latex-hyperref-template: nil
+# org-export-with-toc: nil
+# org-export-with-date: nil
+# org-export-with-title: t
+# org-latex-title-command: nil
+# End:
