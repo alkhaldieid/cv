@@ -1,0 +1,13 @@
+#+TITLE: Cover Letter
+#+OPTIONS: toc:nil
+
+\noindent
+Dear KAUST recruiting team,
+\indent
+
+
+
+
+\noindent
+Sincerely, \\
+Eid Alkhaldi

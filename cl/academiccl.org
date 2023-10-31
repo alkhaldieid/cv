@@ -1,0 +1,19 @@
+#+TITLE: Cover Letter
+#+OPTIONS: toc:nil
+
+\noindent
+Dear Recruiting team,
+\indent
+
+I hope this letter finds you well. I am writing to express my sincere interest in joining your team at Company in a role related to e-learning. I am deeply passionate about the transformative power of e-learning, a belief that stems from my own profound experiences with platforms like Coursera and DeepLearning.AI during my Ph.D. journey.
+
+With over 8 years of experience in machine learning and artificial intelligence, my skills have developed in tandem with my dedication to education. My background includes a Ph.D. in Electrical Engineering, and I have cultivated expertise in computer science and statistics. My ultimate goal is to leverage my knowledge and experience to bring the benefits of e-learning to Saudi students, aligning seamlessly with the vision outlined in Saudi Vision 2030.
+
+While I may not be aware of specific job opportunities currently available at [Company Name], I am confident that my commitment to e-learning's possibilities, coupled with my proficiency in AI, make me a valuable addition to any team with a similar mission.
+
+I look forward to the opportunity to discuss how my skills and passion align with your organization's goals. Please find my attached resume for your reference. Thank you for considering my application.
+
+
+\noindent
+Sincerely,\\
+Eid Alkhaldi

@@ -1,0 +1,20 @@
+#+TITLE: Cover Letter
+#+OPTIONS: toc:nil num:nil
+
+\noindent
+Dear Hiring Manager,
+
+I am writing to express my interest in the Data Scientist & Artificial Intelligence Engineer position at Aramco's AI Center of Excellence within its Research & Development Center. As a freshly graduated PhD in Electrical Engineering with extensive experience in deep learning and bio-inspired computing, I am confident that I have the knowledge and skills required to excel in this role.
+
+During my academic career, I had the opportunity to work on a number of innovative projects in the field of deep learning and bio-inspired computing. My research led to the development of novel algorithms for solving complex problems, and I am proud to have had four of my articles published in respected journals, including one in the highly-regarded IEEE Access.
+
+In addition to my technical expertise, I have a strong passion for AI and its potential to make a positive impact on society. I am eager to bring my knowledge and skills to a real-world setting and contribute to the development of cutting-edge AI solutions.
+
+Although I have no direct industry experience, I believe that my academic background, coupled with my passion for AI, make me a strong candidate for this position. I am confident that I have the ability to quickly adapt to new technologies and environments, and I am eager to learn and grow in this field.
+
+Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further and to contribute my skills to the AI Center of Excellence at Aramco.
+\\
+\\
+\noindent
+Sincerely,\\
+Eid Alkhaldi

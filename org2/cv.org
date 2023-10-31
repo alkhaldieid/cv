@@ -1,0 +1,56 @@
+#+TITLE: CV - [Your Full Name]
+#+AUTHOR: [Your Full Name]
+#+DATE: [Date]
+#+OPTIONS: toc:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [font size, paper size, etc.]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry} % Adjust margin as needed
+#+LATEX_HEADER: \usepackage{fontspec} % If using custom fonts
+#+LATEX_HEADER: \usepackage{hyperref} % Add hyperlinks to URLs
+#+LATEX_HEADER: \hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+* Contact Information
+  - Address: [Your Address]
+  - Email: [Your Email Address]
+  - Phone: [Your Phone Number]
+  - LinkedIn: [https://www.linkedin.com/in/eid-alkhaldi-38a10212a/]
+
+* Summary
+  [A brief summary of your professional background, skills, and career goals.]
+
+* Education
+** PhD in Electrical Engineering - [University Name], [Year]
+   [Description of your PhD research and key achievements.]
+
+** Master's in [Your Major] - [University Name], [Year]
+   [Brief description of your master's degree and any notable projects.]
+
+** Bachelor's in [Your Major] - [University Name], [Year]
+   [Summary of your undergraduate studies and relevant coursework.]
+
+* Work Experience
+** [Job Title] - [Company/Organization], [Dates]
+   - [Description of your role and responsibilities]
+   - [Highlight any significant achievements or projects]
+
+** [Job Title] - [Company/Organization], [Dates]
+   - [Description of your role and responsibilities]
+   - [Highlight any significant achievements or projects]
+
+* Publications
+  [List your publications, including conference papers and journal articles.]
+
+* Technical Skills
+  [List your relevant technical skills, programming languages, tools, etc.]
+
+* Awards and Honors
+  [Any awards, scholarships, or honors you've received.]
+
+* Certifications
+  [List any relevant certifications you hold.]
+
+* Languages
+  [Mention your proficiency in different languages.]
+
+* References
+  [Available upon request.]

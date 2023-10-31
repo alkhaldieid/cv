@@ -1,0 +1,52 @@
+E-learning
+Workable Solutions
+AI Solutions
+ChatGPTChatGPT
+English
+Pattern Recognition
+Research and Development (R&D)
+Microsoft Excel
+Plotly
+Data Visualization
+Medical Imaging
+Jupyter
+Signal Processing
+HTML
+Programming
+Electrical Engineering
+Pandas (Software)
+Image Processing
+Object-Oriented Programming (OOP)
+Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
+Computer Vision
+Bash
+LaTeX
+Data Science
+Deep Neural Networks (DNN)
+Git
+Python (Programming Language)
+Python-dcgp
+DEAP
+Emacs
+Emacs Lisp
+Research
+Python 
+Deep Learning
+Machine Learning
+Optimization
+Medical Image Classification
+Digital Image Processing
+Digital Signal Processing
+Predictive Modeling
+Convolutional Neural Networks (CNN)
+TensorFlow
+PyTorch
+OpenCV
+Scikit-Learn
+Keras
+Matlab
+Linux
+Amazon Web Services (AWS)
+Cloud Computing
+Google Cloud Platform (GCP)
+Artificial Intelligence (AI)
