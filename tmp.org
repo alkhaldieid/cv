@@ -1,0 +1,9 @@
+* As an AI Consultant at NMK, I specialize in advancing autonomous driving technology.
+* I lead initiatives to develop AI-driven solutions for assisted automated driving, leveraging my background in electrical engineering and extensive AI research experience.
+* Key tasks include setting up experimental environments and conducting rigorous testing to validate the performance and safety of our AI algorithms.
+* Collaborating closely with cross-functional teams, I design robust and safe driving systems that prioritize user safety and regulatory compliance.
+* I actively engage with industry leaders and regulatory bodies to stay informed about emerging trends and best practices in autonomous driving technology.
+* Ethical and responsible innovation is a cornerstone of my work, and I advocate for transparency, accountability, and inclusivity in our development processes.
+* In addition to my technical responsibilities, I mentor junior team members and foster a culture of learning and collaboration within NMK.
+* I am deeply committed to participating in community outreach initiatives to raise awareness about the potential benefits and challenges of autonomous driving technology.
+* At NMK, I am dedicated to driving our vision forward through innovation, integrity, and a relentless pursuit of excellence in the field of autonomous driving.
