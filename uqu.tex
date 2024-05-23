@@ -1,0 +1,426 @@
+\documentclass[letterpaper,
+		%twocolumn,
+		10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{metalogo}
+\usepackage{xifthen}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+% \newfontfamily\cfont{Noto Sans CJK SC}
+\usepackage{libertine}
+
+% Macro to allow image links in XeLaTeX
+\ifxetex
+  \usepackage{letltxmacro}
+  \setlength{\XeTeXLinkMargin}{1pt}
+  \LetLtxMacro\SavedIncludeGraphics\includegraphics
+  \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+    \IncludeGraphicsAux{#1}%
+  }%
+  \newcommand*{\IncludeGraphicsAux}[2]{%
+    \XeTeXLinkBox{%
+      \SavedIncludeGraphics#1{#2}%
+    }%
+  }%
+\fi
+%%%%%%%
+
+% Bold contents of a link
+\let\oldhref\href
+\renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+
+% Your name goes here:
+\author{Eid Alkhaldi, Ph.D.}
+
+% Update date set to last compile:
+\date{\today}
+
+% Custom title command.
+\renewcommand{\maketitle}{
+	\hspace{.25\textwidth}
+	\begin{minipage}[t]{.5\textwidth}
+\par{\centering{\Huge  \bfseries{\theauthor}}\par}
+	\end{minipage}
+	\begin{minipage}[t]{.25\textwidth}
+{\footnotesize\hfill{}\color{gray}
+\hfill{}Download this document:
+
+\hfill{}\href[gray]{https://github.com/alkhaldieid/cv/blob/master/cv.pdf}{https://github.com/alkhaldieid/cv/blob/master/cv.pdf \pdf}
+
+\hfill{}(Last updated \thedate.)
+}
+	\end{minipage}
+}
+
+
+% Setting the font I want:
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sqrcaps}
+
+% Making the \entry command
+\newcommand{\entry}[4]{
+\ifthenelse{\isempty{#3}}
+{\slimentry{#1}{#2}}{
+
+\begin{minipage}[t]{.15\linewidth}
+\hfill \textsc{#1}
+\end{minipage}
+\hfill\vline\hfill
+\begin{minipage}[t]{.80\linewidth}
+{\bf#2}\\\textit{#3} \footnotesize{#4}
+\end{minipage}\\
+\vspace{.2cm}
+}}
+
+\newcommand{\slimentry}[2]{
+
+\begin{minipage}[t]{.15\linewidth}
+\hfill \textsc{#1}
+\end{minipage}
+\hfill\vline\hfill
+\begin{minipage}[t]{.80\linewidth}
+#2
+\end{minipage}\\
+\vspace{.25cm}
+}% end \entry command definition
+
+% Some macros because I'm lazy:
+\newcommand{\osu}{Oklahoma State University}
+\newcommand{\ut}{University of Toledo}
+
+% Macros for people's names including link to their websites
+\newcommand{\ezz}{\href{https://www.utoledo.edu/engineering/electrical-engineering-computer-science/people/salari.html}{Dr. Ezzatollah Salari}}
+\newcommand{\secondmember}{\href{https://www.utoledo.edu/engineering/electrical-engineering-computer-science/people/kim.html}{Dr. Kim, Junghwan,}}
+\newcommand{\thirdmember}{\href{https://www.utoledo.edu/engineering/civil-and-environmental-engineering/chou.html}{Eddie Y. Chou, Ph.D., P.E.}}
+\newcommand{\fourthmember}{\href{https://www.utoledo.edu/engineering/electrical-engineering-computer-science/people/richard-molyet.html}{Dr. Richard G. Molyet}}
+\let\lineheight\baselineskip
+
+% Link images
+\newcommand{\pdf}{\includegraphics[height=.85em]{cv/pdf.png}}
+\newcommand{\yt}{\includegraphics[height=.85em]{cv/yt.png}}
+\newcommand{\gh}{\includegraphics[height=.85em]{cv/gh.png}}
+\newcommand{\www}{\includegraphics[height=.85em]{cv/www.png}}
+\newcommand{\email}{\includegraphics[height=.85em]{cv/email.png}}
+\newcommand{\phn}{\includegraphics[height=.85em]{cv/phone.png}}
+
+% Custom section spacing and formatting
+\titleformat{\part}{\Huge\scshape\filcenter}{}{1em}{}
+\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
+\titlespacing{\section}{0pt}{3pt}{7pt}
+\titleformat{\subsection}{\large\bfseries}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+
+% No indentation
+\setlength{\parindent}{0in}
+
+\begin{document}
+
+\maketitle
+
+\section{Basic Info}
+
+\begin{minipage}[t]{.5\linewidth}
+\begin{tabular}{rp{.75\linewidth}}
+	\baselineskip=20pt
+	\email{} :	& \href{mailto:eid.alkhaldi@gmail.com}{eid.alkhaldi@gmail.com}\\
+	\yt{} : & \href{https://www.linkedin.com/in/eid-alkhaldi-ph-d-38a10212a/}{https://www.linkedin.com/in/eid-alkhaldi-38a10212a/}
+\end{tabular}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\begin{tabular}{rl}
+\gh{} : & \href{http://github.com/alkhaldieid}{github.com/alkhaldieid}\\
+\phn : & 00966508336583
+\end{tabular}
+\end{minipage}
+
+%\begin{itemize} 
+%\item A results-driven and accomplished Electrical Engineer with a Ph.D. and a strong publication record in esteemed journals such as IEEE Access. Demonstrating over 8 years of dedicated research experience, I have established expertise in Deep Learning, Computer Vision, Bio-inspired optimization methods, and Machine Learning. As evidenced by my four published journal papers as a first author, I exhibit a commitment to scholarly excellence and innovation in academic pursuits.
+%Seeking to leverage my academic background and research proficiency, I am eager to transition into a role as a University Assistant Professor. My extensive experience in leading-edge technologies and interdisciplinary research equips me to contribute effectively to both teaching and research endeavors within the academic community.
+%Driven by a passion for advancing knowledge and fostering intellectual curiosity, I am poised to inspire and mentor the next generation of scholars while furthering the boundaries of scientific inquiry. With a proven track record of collaborative research projects and a dedication to academic rigor, I am prepared to make meaningful contributions to the academic institution and its scholarly community.
+%\end{itemize}
+
+%\begin{itemize} 
+%  \item Ph.D. in Electrical Engineering with over 8 years of focused academic research in AI and autonomous systems. Experienced in developing innovative methods for image classification and optimizing CNN ensembles for maximum accuracy, as evidenced by publications in prestigious journals like IEEE Access.
+%Entrepreneurial industry experience as an AI Consultant at NMK, a startup specializing in autonomous driving technology. Led initiatives to establish experimental environments and conducted research to develop AI-driven solutions for assisted automated driving. Proven ability to innovate and deliver tangible results in dynamic settings.
+%Passionate problem-solver committed to innovation and adept at leading high-performing teams to deliver impactful solutions. Seeking opportunities to leverage academic and industry experience to drive digital transformation and operational excellence across diverse domains.
+%
+%
+%\end{itemize}
+
+\begin{itemize}
+Ph.D. in Electrical Engineering with over 8 years of focused academic research in Digital Signal Processing (DSP), Digital Image Processing, Data Compression and Communication Systems. Experienced in developing advanced techniques for signal classification and optimizing convolutional neural network (CNN) ensembles for signal and image analysis, as evidenced by publications in prestigious journals like IEEE Access.
+
+Entrepreneurial industry experience as an AI Consultant at NMK, a startup specializing in autonomous driving technology. Led initiatives to establish experimental environments and conducted research to develop AI-driven solutions for signal processing in vehicular communication systems. Proven ability to innovate and deliver tangible results in dynamic settings.
+
+Passionate problem-solver committed to advancing the fields of communication and signal processing. Adept at leading high-performing teams to deliver impactful solutions, I am seeking opportunities to leverage my academic and industry experience to drive digital transformation and operational excellence in communication systems, signal processing, and related domains.
+
+\end{itemize}
+\section{Institutions}
+
+\entry{2017--2022}
+	{Ph.D. in Engineering}
+	{\ut, Toledo, Ohio, USA}
+	{
+	Focusing on medical image processing, Artificial Inteligence and Deep Learning, Data Compression and Multimedia Communication, Modern Communication. Advisor: \ezz.
+	}
+        {
+         \textbf{\"Dissertation Title:  \textit {Ensemble Optimization for Histological Image Classification}
+        }}
+
+\entry{2015--2017}
+	{M.S. in Electrical Engineering}
+	{
+          Courses include: Image Analysis & Computer Vision, Communication Systems, Random Signals and Optimal Filters, 
+	}
+	{\ut, Toledo, Ohio, USA}
+
+\entry{2014}
+	{B.S. in Electrical Engineering}
+	{\osu, College of Engineering, Architecture and Technology}
+	{
+	Stillwater, Oklahoma, USA
+	}
+
+\section{Publications}
+
+
+\entry{2022}
+    {Ensemble Optimization for Histological Image Classification}
+    {Dissertation, \ut}
+    {
+Committee: \ezz, \secondmember, \thirdmember, \fourthmember.
+    }
+
+\entry{Dec 2022}
+{E. Alkhaldi and E. Salari, ``Ensemble Optimization for Invasive Ductal Carcinoma (IDC) Classification Using Differential Cartesian Genetic Programming,'' in IEEE Access, vol. 10, pp. 128790-128799, 2022, doi: 10.1109/ACCESS.2022.3228176.}
+{\small{\textbf{IEEE Access}}    \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9978635}{\pdf} {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9978635}}
+
+\entry{2022}
+{Alkhaldi, E. \& Salari, E. ``Ensemble Optimization Using Clonal Selection Algorithm for Breast Cancer Histology Image Classification''}
+{\small{International Journal of Computer Science and Technology
+(IJCST) Vol. 13, Issue 4, Oct - Dec 2022}
+\href{https://www.ijcst.com/vol12/issue1/3-eid-alkhaldi.pdf}{\pdf} {https://www.ijcst.com/vol12/issue1/3-eid-alkhaldi.pdf}}
+
+
+
+  \entry{2021}
+	{Alkhaldi, E. \& Salari, E. ``Adaptive PSO-Based Ensemble Optimization for Histology Image Classification''}
+	{\small{International Journal of Computer Science and Technology
+      (IJCST), Vol 12, Issue 1, Version Jan-March 2021.}
+    \href{https://www.ijcst.com/vol12/issue1/3-eid-alkhaldi.pdf}{\pdf} {https://www.ijcst.com/vol12/issue1/3-eid-alkhaldi.pdf}}
+
+\entry{2019}
+{Alkhaldi, E. \& Salari, E. ``Genetically Optimized Heterogeneous Ensemble for Histological Image Classification''}
+{\small{International Journal of Science and Engineering Investigations
+(IJSEI), 8(95), 113-118.}
+\href{http://www.ijsei.com/papers/ijsei-89519-16.pdf}{\pdf} {http://www.ijsei.com/papers/ijsei-89519-16.pdf}}
+
+
+\section{Academic Experience}
+Jan 2017 - Dec 2022 | \textbf{Ph.D. Cadidate} \textit{\textbf{ (The University of Toledo)}}
+%\subsection{Courses}
+%\begin{itemize}
+%\item Image Analysis and Computer Vision
+%\item Random Signals and Optimal Filters
+%\item Data and Multimedia Compression
+\subsection{Responsibilities:}
+\begin{itemize}
+\item  Pursued a Doctor of Philosophy (Ph.D.) degree in Electrical Engineering with a specialization in the applications of AI on medical images classification 
+\item  Actively engaged in groundbreaking research aimed at improving the classification accuracy of histology images using ensemble of AI models
+\item  Published four peer-reviewed journal articles, including, IEEE Access
+\item Demonstrated leadership and teamwork skills through effective collaboration with interdisciplinary teams
+%\item Assisted in course development, lesson planning, and curriculum design.
+\item Provided support in delivering lectures, leading discussions, and facilitating lab sessions.
+%\item Helped create exam materials, including questions, problems, and solutions.
+%\item Assisted in proctoring exams and ensuring academic integrity during testing periods.
+%\item Graded exams, assignments, and projects, providing constructive feedback to students.
+\item Mentored two graduate students in research projects related to the application of AI in medical image classification
+\item Provided guidance, support, and feedback on research methodologies and project implementation.
+\item Offered assistance and academic support to undergraduate and graduate students during office hours and via email.
+\item Gave presentations during lectures, providing additional insights, examples, and demonstrations to enhance student understanding.
+%\item Incorporated multimedia resources and real-world examples to enrich course content and engage students effectively.
+\item Collaborated with faculty members, teaching assistants, and lab instructors to ensure coherence and consistency across course materials and assessments.
+\item Fostered a collaborative and supportive learning environment, encouraging peer-to-peer interaction and knowledge sharing among students.
+\end{itemize}
+
+
+\section{Entrepreneurial Startup Experience}
+FEB 2023 - Present | \textbf{Co-founder \& Senior AI Consultant, NMK} \textit{\textbf{ (Autonomous Driving \underline{Startup} Company)}}
+\subsection{Responsibilities:}
+\begin{itemize}
+\item Actively involved in the establishment phase of NMK, a startup in the establishment stage specializing in cutting-edge autonomous driving technology, offering innovative solutions designed to revolutionize the automotive industry. 
+\item Led AI research and development aimed at enhancing the performance and capabilities of autonomous driving technologies.
+\item Collaborated closely with cross-functional teams, including engineers, designers, and product managers, to translate business requirements into technical solutions.
+\item Conducted extensive research on cutting-edge AI techniques and autonomous vehicle technologies to drive product development and innovation.
+\item Provided technical leadership and mentorship to junior team members, fostering a culture of continuous learning and professional growth.
+\item Contributed to strategic planning and a road-map for AI-driven features and products, aligning initiatives with company goals and market trends.     
+\end{itemize}
+
+\subsection{Achievements}
+\begin{itemize}
+\item Spearheaded the development environment and optimized the workflow of development and testing, significantly enhancing the productivity of the team.
+\item Significantly enhancing the safety and user experience of NMK's products by introducing Autonamous Emergency stop system. 
+\item Assisted in establishing strategic partnerships with governmental agencies such as the ministry of transportation. This collaboration expanded market reach and drove revenue growth.
+\item Initiated the development of an e-commerce platform www.nmk.sa, providing a streamlined avenue for product sales. This initiative resulted in a notable increase in sales volume, with a growth rate exceeding 50\%, demonstrating the platform's effectiveness in reaching customers and driving revenue.
+\end{itemize}
+
+
+\section{Licenses \& Certifications}
+
+\entry{2024}
+{Generative AI with Large Language Models
+  \href{https://coursera.org/share/ed0b687601597755c62e03741088321b}{\www}}
+{Coursera, issued Jan 2024}
+
+\entry{2018}
+{Improving Deep Neural Networks: Hyperparameter Tuning, Regularization And Optimization
+  \href{https://www.coursera.org/account/accomplishments/verify/SYMNEXXAAUM8}{\www}}
+{Coursera, issued March 2018}
+
+\entry{2018}
+{Neural Networks and Deep Learning
+  \href{https://www.coursera.org/account/accomplishments/verify/QVDGURZQCDDZ}{\www}}
+{Coursera, issued February 2018}
+
+\section{Languages}
+
+\entry{Human}
+	{Arabic, English}
+	{}
+	{}
+
+\entry{Machine}
+	{Python, Matlab/GNU Octave, bash/shell, C, C++ , markup languages including {\LaTeX} / {\XeTeX}, Markdown, basic HTML.}
+	{}
+	{}
+\entry{Deep Learning}
+	{PyTorch, TensorFlow, Keras, Fastai and Sikit-Learn}
+	{}
+	{}
+\entry{Other Tools}
+	{OpenCV, MATLAB, DEAP (Genetic optimization framamework) , Linux}
+	{}
+
+\section{Research Interests}
+
+\begin{itemize}
+\item Artificial Intelligence 
+\item Digital Image Processing, Signal Processing and Communication Systems
+\item Applications of Artificial Intelligence in Medical images, healthcare systems, Cybersecurity and Finance
+\item Machine Learning, Deep Learning, Data Science and Big Data
+\item Hyperparameter Tuning, Non-convex Optimiation, Numerical Methods and Biologically Inspired Computing
+
+\end{itemize}
+
+\section{Presentations}
+
+\entry{Dec 2022}
+	{PhD Dissertation Defense}
+	{``Ensemble Optimization for Histological Image Classification''}
+
+\entry{April 2022}
+	{PhD Proposal Defense}
+	{``Ensemble Optimization for Histological Image Classification''}
+
+\entry{Oct 2021}
+	{Optimized PhD Workflow Tutorial for UT grad students}
+	{``LaTex, BibTex, Mendeley and Emacs workflow for writing PhD dissertations''}
+
+\section{Public Code and Scripts}
+
+%\entry{In Progress}
+%	{Genetic Algorithm Ensemble Optimization \href{https://github.com/alkhaldieid/gae}{\gh}}
+%	{A Genetic Algorithm based optimization framework that automatically tune ensembles hyperparameters}
+%
+%\entry{In Progress}
+%	{Quantim Computing based Transfer Learning \href{https://github.com/alkhaldieid/gpe}{\gh}}
+%	{A Quantum based Learning Rate Scheduler for transfer learning models}
+
+\entry{Published}
+	{Histology Image Classification models for ICIAR and IDC \href{https://github.com/alkhaldieid/iciar}{\gh}}
+	{Various pretrained models for breast cancer detection in histology images. Achieved 88\% accuracy on the ICIAR  \href{https://github.com/alkhaldieid/iciar}{\www}  dataset }
+	{}
+
+
+\entry{Published}
+	{PhD Emacs \href{https://github.com/alkhaldieid/.emacs.d}{\gh}}
+	{Rich-featured and minimal Emacs configuration ideal for researchers and grad students}
+
+
+
+%\section{Engineering Projects}
+%
+%\begin{itemize}
+%	\item UC Davis NATCAR Design Contest (Oklahoma State University 2014 team).
+%	\begin{itemize}
+%		\item Responsibilities: \dots{}
+%			\begin{itemize}
+%				\item Microprocessor and interface with other blocks of the system
+%				\item Design the power circuit for the whole system
+%				\item Choosing the best value Battery that meet the project specs
+%				\item The servo control software
+%			\end{itemize}
+%	\end{itemize}
+%\end{itemize}
+%
+%\section{Volunteering and Extracurricular activities}
+%\begin{itemize}
+%	\item MSA vice president (2011-2012)
+%	\item SSA member (2007 – 2012)
+%\end{itemize}
+
+\section{Community Service}
+\begin{itemize}
+\item Contributed to groundbreaking research conducted in collaboration with researchers from Alhada Armed Forces Hospital focused on the detection of fatty liver using AI models on CT scans. This initiative aimed to advance medical diagnostics and improve patient outcomes in the field of liver disease management. (2023)
+\item Conducted a workshop on using an optimum Ph.D. workflow using free and open source software to PhD students at the University of Toledo (2020) 
+\item Open-sourced an optimum Emacs configuration tailored specifically for graduate students and made it available to the public domain through https://github.com/alkhaldieid/.emacs.d
+%\item Served as a board member for the Muslim Student Association (MSA) at Oklahoma State University, managing finances and budget allocations for various events and initiatives.
+%\item Organized successful interfaith dialogues and cultural exchange events to foster understanding and unity among students of diverse backgrounds.
+%\item Coordinated weekly Friday prayer services on campus, providing a welcoming and inclusive environment for Muslim students to practice their faith.
+\item Led community service projects, including food drives and volunteering at local shelters, to give back to the broader community and promote social responsibility among members.
+%\item Facilitated educational workshops and seminars on topics relevant to Muslim students, such as Islamic history, spirituality, and contemporary issues.
+\item Initiated a mentorship program within the MSA and SSA (Saudi Student Association) to assist new students in navigating campus life, providing guidance on academics, extracurricular activities, and social integration.
+\item Organized orientation sessions and campus tours for incoming students, offering practical advice and resources to ease their transition to university life.
+\item Established peer support groups where new students could connect with experienced peers for academic assistance, emotional support, and friendship.
+\item Collaborated with university resources such as counseling services and academic advisors to ensure new students had access to comprehensive support systems.
+\item Hosted welcoming events and social mixers specifically tailored for new students, creating opportunities for them to network, build relationships, and feel part of the university community from the outset.
+\end{itemize}
+\section{References}
+%
+References can be provided upon request to further attest to my qualifications and suitability for the role. Please feel free to reach out via email for further details.
+%\begin{itemize}
+%\item \textbf{Dr. Ezzatollah Salari} \\
+%EECS Department\\
+%The University of Toledo\\
+%Toledo,OH 43606 \\
+%Tel: (419) 530-6002 \\
+%Office: NI 2037 \\
+%E-mail:  Ezzatollah.Salari@utoledo.edu
+%
+%\item \textbf{EDDIE CHOU, PhD, PE} \\
+%Professor of Civil Engineering and\\
+%Director, Transportation Systems Research Laboratory\\
+%University of Toledo, Toledo, Ohio 43606\\
+%Phone: 419-530-8123\\
+%E-mail: eddie.chou@utoledo.edu\\
+%
+%\item \textbf{WEIQING SUN, Ph.D.} \\
+%Program Director of Master's Progams in Cyber Security\\
+%Computer Science and Engineering Technology\\
+%Engineering Technology Department\\
+%Office: NE 1627\\
+%Phone: (419)530-3273\\
+%Fax: (419)530-3068\\
+%Email: Weiqing.Sun@utoledo.edu \\
+%  %Email: \texit{Ezzatollah.Salari@utoledo.edu} \\
+%  %Phone: \textit{}
+%	%\item References are available upon your request.
+%	%\item Email me \href{mailto:eid.alkhaldi@gmail.com}{\email} and I'll refer you to my mentors based on your interests.
+%\end{itemize}
+\end{document}
