@@ -1,0 +1,342 @@
+\documentclass[letterpaper,
+		%twocolumn,
+		10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{metalogo}
+\usepackage{xifthen}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage[T1]{fontenc}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage[margin=1in]{geometry}
+\usepackage{titling}
+% \newfontfamily\cfont{Noto Sans CJK SC}
+\usepackage{libertine}
+
+% Macro to allow image links in XeLaTeX
+\ifxetex
+  \usepackage{letltxmacro}
+  \setlength{\XeTeXLinkMargin}{1pt}
+  \LetLtxMacro\SavedIncludeGraphics\includegraphics
+  \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+    \IncludeGraphicsAux{#1}%
+  }%
+  \newcommand*{\IncludeGraphicsAux}[2]{%
+    \XeTeXLinkBox{%
+      \SavedIncludeGraphics#1{#2}%
+    }%
+  }%
+\fi
+%%%%%%%
+
+% Bold contents of a link
+\let\oldhref\href
+\renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
+
+% Your name goes here:
+\author{Eid Alkhaldi, Ph.D.}
+
+% Update date set to last compile:
+\date{\today}
+
+% Custom title command.
+\renewcommand{\maketitle}{
+	\hspace{.25\textwidth}
+	\begin{minipage}[t]{.5\textwidth}
+\par{\centering{\Huge  \bfseries{\theauthor}}\par}
+	\end{minipage}
+	\begin{minipage}[t]{.25\textwidth}
+{\footnotesize\hfill{}\color{gray}
+\hfill{}Download this document:
+
+\hfill{}\href[gray]{https://github.com/alkhaldieid/cv/blob/master/cv.pdf}{https://github.com/alkhaldieid/cv/blob/master/cv.pdf \pdf}
+
+\hfill{}(Last updated \thedate.)
+}
+	\end{minipage}
+}
+
+
+% Setting the font I want:
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sqrcaps}
+
+% Making the \entry command
+\newcommand{\entry}[4]{
+\ifthenelse{\isempty{#3}}
+{\slimentry{#1}{#2}}{
+
+\begin{minipage}[t]{.15\linewidth}
+\hfill \textsc{#1}
+\end{minipage}
+\hfill\vline\hfill
+\begin{minipage}[t]{.80\linewidth}
+{\bf#2}\\\textit{#3} \footnotesize{#4}
+\end{minipage}\\
+\vspace{.2cm}
+}}
+
+\newcommand{\slimentry}[2]{
+
+\begin{minipage}[t]{.15\linewidth}
+\hfill \textsc{#1}
+\end{minipage}
+\hfill\vline\hfill
+\begin{minipage}[t]{.80\linewidth}
+#2
+\end{minipage}\\
+\vspace{.25cm}
+}% end \entry command definition
+
+% Some macros because I'm lazy:
+\newcommand{\osu}{Oklahoma State University}
+\newcommand{\ut}{University of Toledo}
+
+% Macros for people's names including link to their websites
+\newcommand{\ezz}{\href{https://www.utoledo.edu/engineering/electrical-engineering-computer-science/people/salari.html}{Dr. Ezzatollah Salari}}
+\newcommand{\secondmember}{\href{https://www.utoledo.edu/engineering/electrical-engineering-computer-science/people/kim.html}{Dr. Kim, Junghwan,}}
+\newcommand{\thirdmember}{\href{https://www.utoledo.edu/engineering/civil-and-environmental-engineering/chou.html}{Eddie Y. Chou, Ph.D., P.E.}}
+\newcommand{\fourthmember}{\href{https://www.utoledo.edu/engineering/electrical-engineering-computer-science/people/richard-molyet.html}{Dr. Richard G. Molyet}}
+\let\lineheight\baselineskip
+
+% Link images
+\newcommand{\pdf}{\includegraphics[height=.85em]{cv/pdf.png}}
+\newcommand{\yt}{\includegraphics[height=.85em]{cv/yt.png}}
+\newcommand{\gh}{\includegraphics[height=.85em]{cv/gh.png}}
+\newcommand{\www}{\includegraphics[height=.85em]{cv/www.png}}
+\newcommand{\email}{\includegraphics[height=.85em]{cv/email.png}}
+\newcommand{\phn}{\includegraphics[height=.85em]{cv/phone.png}}
+
+% Custom section spacing and formatting
+\titleformat{\part}{\Huge\scshape\filcenter}{}{1em}{}
+\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
+\titlespacing{\section}{0pt}{3pt}{7pt}
+\titleformat{\subsection}{\large\bfseries}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
+\titlespacing{\subsection}{0pt}{7pt}{7pt}
+
+% No indentation
+\setlength{\parindent}{0in}
+
+\begin{document}
+
+\maketitle
+
+\section{Profile Summary}
+
+\begin{minipage}[t]{.5\linewidth}
+\begin{tabular}{rp{.75\linewidth}}
+	\baselineskip=20pt
+	\email{} :	& \href{mailto:eid.alkhaldi@gmail.com}{eid.alkhaldi@gmail.com}\\
+	\yt{} : & \href{https://www.linkedin.com/in/eid-alkhaldi-ph-d-38a10212a/}{https://www.linkedin.com/in/eid-alkhaldi-38a10212a/}
+\end{tabular}
+\end{minipage}
+\begin{minipage}[t]{.5\linewidth}
+\begin{tabular}{rl}
+\www{} : & \href{http://alkhaldieid.github.io}{http://alkhaldieid.github.io}\\
+\phn : & 00966508336583
+\end{tabular}
+\end{minipage}
+
+\begin{itemize} 
+\item A Certified Professional Data Scientist with a Ph.D. in Electrical Engineering and over 8 years of specialized research in Artificial Intelligence (AI) and autonomous systems, contributing to advancements in image classification and CNN optimization. Published extensively in prestigious journals, including IEEE Access, with research that has influenced state-of-the-art methodologies.
+
+Entrepreneurial experience as an AI Consultant at NMK, an autonomous driving technology startup, leading AI-powered solutions and experimental environments for assisted driving systems. Successfully developed and implemented innovative systems that have enhanced product performance and team efficiency across academic and industry settings.
+
+Dedicated to leveraging AI expertise and certifications to drive digital transformation, operational excellence, and scalable solutions in various domains. Known for problem-solving, leading high-performing teams, and delivering measurable results.
+\end{itemize}
+
+
+
+\section{Innovations and Publications}
+
+\entry{2024}
+    {Auto Report: Automated Reporting Tool}
+    {\href{https://github.com/alkhaldieid/auto_report}{GitHub Repository}}
+    {Developed and open-sourced a tool for automated generation of reports, designed to streamline data analysis and presentation. This tool allows users to pull data from multiple sources and create professional reports efficiently.}
+
+\entry{Published}
+    {Histology Image Classification Models for ICIAR and IDC}
+    {\href{https://github.com/alkhaldieid/iciar}{GitHub Repository}}
+    {Open-source pretrained models for breast cancer detection in histology images. Achieved 88\% accuracy on the ICIAR dataset, demonstrating the practical application of AI in healthcare.}
+
+\entry{Published}
+    {PhD Emacs Configuration}
+    {\href{https://github.com/alkhaldieid/.emacs.d}{GitHub Repository}}
+    {Released a minimal yet feature-rich Emacs configuration tailored specifically for researchers and graduate students to enhance productivity and workflow management.}
+
+\entry{Dec 2022}
+    {E. Alkhaldi and E. Salari, ``Ensemble Optimization for Invasive Ductal Carcinoma (IDC) Classification Using Differential Cartesian Genetic Programming,''}
+    {\textbf{IEEE Access}, vol. 10, pp. 128790-128799, 2022. doi: 10.1109/ACCESS.2022.3228176}
+    {\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9978635}{\pdf}}
+
+\entry{2022}
+    {E. Alkhaldi and E. Salari, ``Ensemble Optimization Using Clonal Selection Algorithm for Breast Cancer Histology Image Classification,''}
+    {\textbf{International Journal of Computer Science and Technology (IJCST)}, vol. 13, issue 4, Oct-Dec 2022}
+    {\href{https://www.ijcst.com/vol12/issue1/3-eid-alkhaldi.pdf}{\pdf}}
+
+\entry{2021}
+    {E. Alkhaldi and E. Salari, ``Adaptive PSO-Based Ensemble Optimization for Histology Image Classification,''}
+    {\textbf{International Journal of Computer Science and Technology (IJCST)}, vol. 12, issue 1, Jan-Mar 2021}
+    {\href{https://www.ijcst.com/vol12/issue1/3-eid-alkhaldi.pdf}{\pdf}}
+
+\entry{2019}
+    {E. Alkhaldi and E. Salari, ``Genetically Optimized Heterogeneous Ensemble for Histological Image Classification,''}
+    {\textbf{International Journal of Science and Engineering Investigations (IJSEI)}, vol. 8, issue 95, pp. 113-118, 2019}
+    {\href{http://www.ijsei.com/papers/ijsei-89519-16.pdf}{\pdf}}
+
+
+\section{Education}
+
+\entry{2017--2022}
+    {Ph.D. in Electrical Engineering}
+    {\ut, Toledo, Ohio, USA}
+    {
+    Specialized in medical image processing, Artificial Intelligence, and Deep Learning. Developed novel techniques for histological image classification using ensemble optimization. Advisor: \ezz.
+    }
+    {
+    \textbf{Dissertation:} \textit{Ensemble Optimization for Histological Image Classification}
+    }
+
+\entry{2015--2017}
+    {M.S. in Electrical Engineering}
+    {\ut, Toledo, Ohio, USA}
+    {
+    Focused on signal processing and machine learning applications. Key projects included the design of AI models for biomedical signal analysis.
+    }
+
+\entry{2014}
+    {B.S. in Electrical Engineering}
+    {\osu, College of Engineering, Architecture and Technology, Stillwater, Oklahoma, USA}
+    {
+    Focusing on renewable energy and control engineering. Completed a senior design project on autonomous robotic systems competetion called NASCAR.
+    }
+\section{Work Experience}
+
+\entry{Aug 2024 – Present}
+    {Deputy Site Manager}
+    {Alhabib Trading Company, Construction and Engineering}
+    {
+    \begin{itemize}
+    \item Managed on-site operations at King Abdulaziz Sports City, ensuring adherence to the highest standards of quality and safety, which improved project completion efficiency.
+    \item Developed and implemented data-driven strategies that reduced operational delays by 15\%, optimizing workflow across cross-functional teams.
+    \item Introduced AI-based predictive maintenance and monitoring systems, improving project safety and minimizing equipment failure incidents.
+    \item Automated the creation of daily progress reports using Python, leading to real-time project insights and faster decision-making processes for stakeholders.
+    \item Mentored junior engineers, focusing on improving technical knowledge and promoting a continuous improvement culture, which enhanced team performance by 20\%.
+    \end{itemize}
+    }
+\section{Academic and Research Experience}
+
+\entry{Jan 2017 – Dec 2022}
+    {Ph.D. Candidate in Electrical Engineering}
+    {The University of Toledo}
+    {
+    \begin{itemize}
+    \item Conducted groundbreaking research focused on ensemble optimization techniques for improving classification accuracy of histology images, leading to 4 peer-reviewed journal publications.
+    \item Mentored two graduate students in research projects related to the application of AI in medical image classification, providing technical guidance and feedback on methodologies.
+    \item Supported faculty in delivering lectures, facilitating lab sessions, and providing academic assistance to undergraduate and graduate students, improving student engagement and understanding of AI concepts.
+    \item Collaborated with interdisciplinary teams on research involving AI and medical imaging, resulting in published work that has been cited in leading journals.
+    \item Presented research findings at academic conferences, including defense presentations and external workshops.
+    \end{itemize}
+    }
+\section{Entrepreneurial Startup Experience}
+
+\entry{Feb 2023 – May 2024}
+    {Co-founder \& Senior AI Consultant}
+    {NMK (Autonomous Driving Startup)}
+    {
+    \begin{itemize}
+    \item Spearheaded AI research and development to enhance the performance of NMK’s autonomous driving technology, resulting in the deployment of advanced safety features, including an Autonomous Emergency Stop system.
+    \item Played a key role in strategic planning and roadmap development, which aligned AI-driven product features with market trends, increasing product adoption by 30\%.
+    \item Established an AI development environment and optimized workflows for model training and testing, improving team productivity by 40\%.
+    \item Secured partnerships with government agencies, including the Ministry of Transportation, expanding NMK’s market reach and creating new revenue streams.
+    \item Mentored junior AI engineers, fostering a collaborative culture focused on continuous learning and innovation.
+    \end{itemize}
+    }
+
+\section{Licenses \& Certifications}
+
+\entry{2024}
+{IBM Data Science Professional Certificate}
+{IBM, issued Sep 2024}
+
+\entry{2024}
+{Applied Data Science Capstone}
+{IBM, issued Sep 2024}
+
+
+\entry{2018}
+{Neural Networks and Deep Learning
+  \href{https://www.coursera.org/account/accomplishments/verify/QVDGURZQCDDZ}{\www}}
+{Coursera & DeepLearning.AI  issued February 2018}
+
+\entry{2018}
+{Improving Deep Neural Networks: Hyperparameter Tuning, Regularization And Optimization
+  \href{https://www.coursera.org/account/accomplishments/verify/SYMNEXXAAUM8}{\www}}
+{Coursera & DeepLearning.AI  issued March 2018}
+
+\entry{2024}
+{Generative AI with Large Language Models
+  \href{https://coursera.org/share/ed0b687601597755c62e03741088321b}{\www}}
+{Coursera & DeepLearning.AI  issued Jan 2024}
+
+\entry{2024}
+{Databases and SQL for Data Science with Python
+  \href{https://www.coursera.org/account/accomplishments/verify/24TNBTWW5C2X}{\www}}
+{IBM, issued 2024}
+
+\entry{2024}
+{Python Project for Data Science
+  \href{https://www.coursera.org/account/accomplishments/verify/Q7AS9CU3USFQ}{\www}}
+{IBM, issued 2024}
+
+\entry{2024}
+{Python for Data Science, AI \& Development
+  \href{https://www.coursera.org/account/accomplishments/verify/GC8HBK92TCBY}{\www}}
+{IBM, issued 2024}
+
+\entry{2024}
+{Data Science Methodology
+  \href{https://www.coursera.org/account/accomplishments/verify/F6695L7L38AM}{\www}}
+{IBM, issued 2024}
+
+\entry{2024}
+{Tools for Data Science
+  \href{https://www.coursera.org/account/accomplishments/verify/86FT7Q84HTJU}{\www}}
+{IBM, issued 2024}
+
+\entry{2024}
+{Deploy a Hugo Website with Cloud Build and Firebase Pipeline
+  \href{https://www.coursera.org/account/accomplishments/verify/8HXP9X9F3LCT}{\www}}
+{Google Cloud, issued April 2024}
+
+\entry{2024}
+{What is Data Science?
+  \href{https://www.coursera.org/account/accomplishments/verify/FZFWVHFJG82D}{\www}}
+{IBM, issued 2024}
+
+
+\section{Languages}
+
+\entry{Human}
+	{Arabic, English}
+	{}
+	{}
+
+\entry{Machine}
+	{Python, Matlab/GNU Octave, bash/shell, C, C++ , markup languages including {\LaTeX} / {\XeTeX}, Markdown, basic HTML.}
+	{}
+	{}
+\entry{Deep Learning}
+	{PyTorch, TensorFlow, Keras, Fastai and Sikit-Learn}
+	{}
+	{}
+\entry{Other Tools}
+	{OpenCV, MATLAB, DEAP (Genetic optimization framamework) , Linux}
+	{}
+
+\section{References}
+%
+References can be provided upon request to further attest to my qualifications and suitability for the role. Please feel free to reach out via email for further details.
+\end{document}
